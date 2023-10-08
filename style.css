@@ -48,17 +48,21 @@
   height: 700px;
 }
 h1 {
-  padding-left: 160px;
-  padding-right: 160px;
+  /* padding: initial; */
+  margin: auto;
+  text-align: center;
   position: relative;
   font-size: 4rem;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 .content {
+  margin: auto;
   background-color: rgb(37, 36, 36);
-  padding-left: 160px;
-  padding-right: 160px;
+  padding: 2rem;
+  text-align: justify;
+  /* padding-left: 160px;
+  padding-right: 160px; */
   position: relative;
   font-size: 2rem;
   color: white;
@@ -66,23 +70,59 @@ h1 {
 }
 .bg-1 {
   background-image: url(bike.jpg);
+  height: 10rem;
+  width: 50rem;
 }
 .bg-2 {
   background-image: url(sport-2.jpg);
 }
 .bg-3 {
   background-image: url(sport-3.jpg);
+  height: 10rem;
+  width: 50rem;
 }
 .bg {
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  height: 500px;
+}
+.desc {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background-color: white;
+  font-size: 3rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 550px) {
+  .bg-1 {
+    background-image: url(bike.png);
+    
+  }
+  .bg-2 {
+    background-image: url(sport-2.png);
+  }
+  .bg-3 {
+    background-image: url(sport-3.png);
+    
+  }
+  .bg {
     position: relative;
     width: 100%;
-    background-attachment: fixed;
-    height: 500px;
-}
-.desc{
+    background-attachment: local;
+    height: 300px;
+  }
+  
+  .desc {
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 5rem;
+    left: 4.5rem;
     background-color: white;
     font-size: 3rem;
     padding-left: 20px;
@@ -90,4 +130,6 @@ h1 {
     padding-top: 8px;
     padding-bottom: 8px;
     font-family: Arial, Helvetica, sans-serif;
+    width: 15rem;
+  }
 }
